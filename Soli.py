@@ -23,7 +23,7 @@ for x in range(1, 7):
     solidar = (1 - alpha) * fair + alpha * equal_premium
     delta = solidar - fair
     expected_cost = fair  # da fair = erwarteter Schaden
-    gain_or_loss = solidar - expected_cost
+    gain_or_loss = expected_cost - solidar
     data.append({
         "Typ": x,
         "Faire Prämie (€)": fair,
